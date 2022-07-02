@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Task</title>
+
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+
+		<!-- my style -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- task 1 show & hide password -->
+		<section class="sec-one">
+			<div class="container">
+				<h3>Task-1 show & hide Password</h3>
+				<div>
+					<input type="password" name="pass1" id="pass1" />
+					<button class="btn btn-outline-dark show-hide">Show Password</button>
+				</div>
+			</div>
+			<br />
+			<hr />
+		</section>
+
+		<!-- task 2 table -->
+		<section class="sec-two">
+			<div class="container">
+				<h3>Task-2 Fill a table from a Form</h3>
+
+				<!-- 2 colms -->
+				<div class="row">
+					<!-- left => form -->
+					<div class="col-md-6">
+						<h5>Form inputs</h5>
+
+						<!-- form -->
+						<form action="">
+							<!-- name -->
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									placeholder="Name"
+								/>
+							</div>
+
+							<!-- Position -->
+							<div class="form-group">
+								<label for="name">Position</label>
+								<input
+									type="text"
+									class="form-control"
+									id="position"
+									placeholder="Position"
+								/>
+							</div>
+
+							<!-- Salary -->
+							<div class="form-group">
+								<label for="name">Salary<sub>(number)</sub></label>
+								<input
+									type="number"
+									class="form-control"
+									id="salary"
+									placeholder="Salary (number)"
+								/>
+							</div>
+
+							<!-- ADD Button -->
+							<button class="btn btn-success add">Add to table</button>
+
+							<!-- REMOVE Button -->
+							<button class="btn btn-danger remove">Remove last row</button>
+						</form>
+					</div>
+
+					<!-- right => table -->
+					<div class="col-md-6">
+						<h5>Result table</h5>
+						<table class="table table-striped">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">Name</th>
+									<th scope="col">Position</th>
+									<th scope="col">Salary</th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<br />
+			<hr />
+		</section>
+
+		<!-- task 3 validation -->
+		<section class="sec-three">
+			<div class="container">
+				<h3>
+					Task-3 Validate<sub>(on submit)</sub> that form inputs are more than 5
+					chars
+				</h3>
+				<!-- form -->
+				<form action="">
+					<!-- user name -->
+					<div class="form-group">
+						<label for="username">User Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="username"
+							placeholder="User Name"
+						/>
+					</div>
+					<!-- user password -->
+					<div class="form-group">
+						<label for="userpass">User Password</label>
+						<input
+							type="password"
+							class="form-control"
+							id="userpass"
+							placeholder="User Password"
+						/>
+					</div>
+					<!-- address -->
+					<div class="form-group">
+						<label for="useraddress">User Address</label>
+						<input
+							type="text"
+							class="form-control"
+							id="useraddress"
+							placeholder="User Address"
+						/>
+					</div>
+					<!-- Postal code -->
+					<div class="form-group">
+						<label for="Postal-code">Postal Code <sub>(number)</sub></label>
+						<input
+							type="number"
+							class="form-control"
+							id="Postal-code"
+							placeholder="Postal Code"
+						/>
+					</div>
+					<!-- Submit Button -->
+					<button type="submit" class="btn btn-primary">Submit data</button>
+				</form>
+			</div>
+			<br />
+			<hr />
+		</section>
+
+		<!-- task 4 Images categories filter -->
+		<section class="sec-four">
+			<div class="container">
+				<h3>Task-4 Images categories filter</h3>
+				<header class="text-center d-flex flex-column align-items-center">
+					<h6>PORTOFOLIO</h6>
+					<h1>Check our latest work</h1>
+					<ul>
+						<li id="all" class="active">All</li>
+						<li id="app">App</li>
+						<li id="card">Card</li>
+						<li id="web">Web</li>
+					</ul>
+				</header>
+				<div class="row">
+					<!-- 1 -->
+					<div class="col-lg-4 col-md-6" category="app">
+						<div class="img-box">
+							<img src="media/1.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="col-lg-4 col-md-6" category="card">
+						<div class="img-box">
+							<img src="media/2.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 3 -->
+					<div class="col-lg-4 col-md-6" category="app">
+						<div class="img-box">
+							<img src="media/3.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 4 -->
+					<div class="col-lg-4 col-md-6" category="web">
+						<div class="img-box">
+							<img src="media/4.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 5 -->
+					<div class="col-lg-4 col-md-6" category="card">
+						<div class="img-box">
+							<img src="media/5.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 6 -->
+					<div class="col-lg-4 col-md-6" category="app">
+						<div class="img-box">
+							<img src="media/6.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 7 -->
+					<div class="col-lg-4 col-md-6" category="web">
+						<div class="img-box">
+							<img src="media/7.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 8 -->
+					<div class="col-lg-4 col-md-6" category="web">
+						<div class="img-box">
+							<img src="media/8.jpg" alt="" />
+						</div>
+					</div>
+					<!-- 9 -->
+					<div class="col-lg-4 col-md-6" category="card">
+						<div class="img-box">
+							<img src="media/9.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

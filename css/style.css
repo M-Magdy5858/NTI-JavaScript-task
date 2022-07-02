@@ -1,0 +1,62 @@
+section {
+  background-color: aliceblue;
+  padding: 20px 0px;
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+form input {
+  margin-bottom: 30px;
+}
+
+.sec-three form {
+  width: 60%;
+  margin: 50px auto;
+
+}
+
+.sec-four ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 0px;
+
+  list-style: none inside;
+  padding: 0px;
+}
+
+.sec-four ul li {
+  font-weight: 600;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  border-radius: 25px;
+  transition: 0.3s all ease;
+}
+
+.sec-four ul li:hover,
+.sec-four ul li.active {
+  font-weight: 600;
+  color: royalblue;
+  border: 1px solid royalblue;
+  padding: 5px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.img-box {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.img-box img {
+  max-width: 100%;
+  transition: 0.5s all ease;
+}
+
+.img-box img:hover {
+  transform: scale(1.1);
+}
